@@ -1,0 +1,47 @@
+:root {
+  /* color */
+  --main-background: #f1f5f9;
+  --main-box-background: #eeeeee;
+  --main-transition: 0.3s;
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+  --main-border-rad: 6px;
+  --main-padding-for-button: 8px 10px;
+}
+/* start box */
+.d-flex {
+  display: flex;
+}
+.d-flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.d-flex-c {
+  display: flex;
+  flex-direction: column;
+}
+.d-flex-c-align-c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* end box */
+/* start color */
+.blue-color {
+  background-color: var(--blue-color);
+}
+.red-color {
+  background-color: var(--red-color);
+}
+.orange-color {
+  background-color: var(--orange-color);
+}
+.green-color {
+  background-color: var(--green-color);
+}
+/* end color */
