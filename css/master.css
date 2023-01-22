@@ -267,16 +267,16 @@ a {
   width: 180px;
 }
 
-.profile {
+.content .nav .profile {
   display: flex;
   align-items: center;
 }
-.profile .icon {
+.content .nav .profile .icon {
   margin-right: 15px;
   font-size: 20px;
   position: relative;
 }
-.profile .icon::before {
+.content .nav .profile .icon::before {
   content: "";
   position: absolute;
   background-color: #f44336;
@@ -286,13 +286,13 @@ a {
   top: -4px;
   right: -4px;
 }
-.profile .img {
+.content .nav .profile .img {
   height: 40px;
   width: 40px;
   border-radius: 50%;
   overflow: hidden;
 }
-.profile img {
+.content .nav .profile img {
   max-width: 100%;
 }
 /* end nav */
@@ -1459,3 +1459,281 @@ a {
 }
 /* end backup */
 /* end settings */
+/* start profile  */
+/* start user interface */
+.page .content > .profile {
+  margin: 0 20px 20px;
+  text-transform: capitalize;
+}
+.page .content > .profile > .user {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.page .content > .profile > .user > .admin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  width: 300px;
+  border-right: 1px solid #ccc;
+  background-color: white;
+}
+@media (max-width: 870px) {
+  .page .content > .profile > .user > .admin {
+    max-width: 200px;
+  }
+}
+@media (max-width: 767px) {
+  .page .content > .profile > .user > .admin {
+    border: none;
+  }
+}
+@media (max-width: 532px) {
+  .page .content > .profile > .user > .admin {
+    margin: auto;
+  }
+}
+.page .content > .profile > .user > .admin > .img {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 120px;
+  height: 120px;
+}
+.page .content > .profile > .user > .admin > .img > img {
+  max-width: 100%;
+}
+.page .content > .profile > .user > .admin > p {
+  color: var(--grey-color);
+  font-weight: 600;
+}
+.page .content > .profile > .user > .admin > p:last-child {
+  font-size: 14px;
+  font-weight: 500;
+}
+.page .content > .profile > .user > .admin > .line {
+  width: 150px;
+  height: 5px;
+  background-color: #ccc;
+  border-radius: 30px;
+}
+.page .content > .profile > .user > .admin > .line > span {
+  display: block;
+  width: 70%;
+  height: 100%;
+  background-color: var(--blue-color);
+  border-radius: 30px;
+}
+.page .content > .profile > .user > .admin > .icon i {
+  color: var(--orange-color);
+}
+.page .content > .profile > .user > .info {
+  flex: 1;
+}
+.page .content > .profile > .user > .info > .box {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 20px;
+}
+@media (max-width: 532px) {
+  .page .content > .profile > .user > .info > .box {
+    justify-content: center;
+  }
+}
+.page .content > .profile > .user > .info > .box:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+.page .content > .profile > .user > .info > .box > .head-titile {
+  color: var(--grey-color);
+  font-size: 18px;
+}
+@media (max-width: 516px) {
+  .page .content > .profile > .user > .info > .box > .head-titile {
+    text-align: center;
+  }
+}
+.page .content > .profile > .user > .info > .box > .data {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1450px) {
+  .page .content > .profile > .user > .info > .box > .data {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    justify-content: flex-start;
+    row-gap: 10px;
+  }
+}
+@media (max-width: 1175px) {
+  .page .content > .profile > .user > .info > .box > .data {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    justify-content: flex-start;
+    row-gap: 10px;
+  }
+}
+@media (max-width: 1030px) {
+  .page .content > .profile > .user > .info > .box > .data {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: flex-start;
+    row-gap: 10px;
+  }
+}
+
+.page .content > .profile > .user > .info > .box > .data .cont {
+  display: flex;
+  align-items: center;
+}
+.page .content > .profile > .user > .info > .box > .data .cont > p {
+  font-size: 14px;
+  font-weight: 600;
+
+  color: var(--grey-color);
+}
+.page .content > .profile > .user > .info > .box > .data .cont > span {
+  font-size: 14px;
+  font-weight: 600;
+}
+.page .content > .profile > .user > .info > .box > .data > .checkbox label {
+  height: 18px;
+  width: 80px;
+}
+.page
+  .content
+  > .profile
+  > .user
+  > .info
+  > .box
+  > .data
+  > .checkbox
+  label::before {
+  width: 10px;
+  height: 10px;
+  top: 4px;
+  left: 4px;
+}
+.page
+  .content
+  > .profile
+  > .user
+  > .info
+  > .box
+  > .data
+  > .checkbox
+  > input:checked
+  + label::before {
+  left: calc(80px - 14px);
+  font-size: 8px;
+}
+/* end user interface */
+/* start my skills */
+.page .content > .profile > .overview > .my-skills {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 20px;
+}
+.page .content > .profile > .overview > .my-skills > p {
+  color: var(--grey-color);
+  margin: 10px 0 20px;
+}
+.page .content > .profile > .overview > .my-skills > .box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px 0;
+}
+.page .content > .profile > .overview > .my-skills > .box:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+.page .content > .profile > .overview > .my-skills > .box > span {
+  background-color: #eee;
+  padding: var(--main-padding-for-button);
+  border-radius: var(--main-border-rad);
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+}
+/* end my skills */
+/* start activities */
+.page .content > .profile > .overview {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  .page .content > .profile > .overview {
+    grid-template-columns: auto;
+  }
+}
+.page .content > .profile > .overview > .activities {
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  /* margin-top: 20px; */
+}
+.page .content > .profile > .overview > .activities > p {
+  color: var(--grey-color);
+  margin: 10px 0 20px;
+}
+.page .content > .profile > .overview > .activities > .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.page .content > .profile > .overview > .activities > .box:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+.page .content > .profile > .overview > .activities > .box > .img {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.page .content > .profile > .overview > .activities > .box > .img > img {
+  width: 80px;
+}
+@media (max-width: 767px) {
+  .page .content > .profile > .overview > .activities > .box > .img > img {
+    width: 60px;
+  }
+}
+@media (max-width: 500px) {
+  .page .content > .profile > .overview > .activities > .box > .img {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.page .content > .profile > .overview > .activities > .box > .info {
+  text-align: right;
+}
+.page .content > .profile > .overview > .activities > .box span {
+  margin-bottom: 10px;
+  font-weight: 600;
+  display: block;
+}
+.page .content > .profile > .overview > .activities > .box p {
+  color: var(--grey-color);
+  font-weight: 600;
+}
+/* @media (max-width: 600px) {
+  .page .content > .profile > .overview > .activities > .box p {
+    color: var(--grey-color);
+    font-weight: 600;
+    font-size: 14px;
+  }
+} */
+/* endactivities */
+/* end profile  */
