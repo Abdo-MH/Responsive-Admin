@@ -92,9 +92,186 @@
         </div>
         <h1>Settings</h1>
         <!-- start settings -->
-
-        <!-- end settings -->
+        <div class="settings">
+          <!-- start control  -->
+          <div class="box control">
+            <h2>site control</h2>
+            <p>control the website if there is maintenace</p>
+            <div class="control">
+              <div class="text">
+                <h4>website control</h4>
+                <p>open/close website and type the reason</p>
+              </div>
+              <div class="checkbox">
+                <input checked type="checkbox" class="toggle-checkbox" id="check">
+                <label for="check"></label>
+              </div>
+            </div>
+            <form action="">
+              <textarea placeholder="Close Message content"></textarea>
+            </form>
+          </div>
+          <!-- end control  -->
+          <!-- start general info -->
+      <div class="box general">
+      <h2>general info</h2>
+      <p>general information about your account</p>
+      <form action="">
+        <label>first name
+        </label>
+          <input type="Text" placeholder="First name">
+        <label>last Name
+        </label>
+          <input type="Text" placeholder="Last name">
+          <label>email</label>
+          
+          <div class="email">
+            <input type="email" placeholder="abdolarge011@gmail.com">
+            <input type="submit" placeholder="Change">
+          </div>
+      </form>
       </div>
+          <!-- end general info -->
+          <!-- start security -->
+          <div class="box security">
+            <h2>security info</h2>
+            <p>security information about your account</p>
+            <div class="password">
+              <div class="text">
+                <h4>
+                  password
+              </h4>
+              <p>last change on 25/1/2023</p>
+            </div>
+            <a href="">Change</a>
+            </div>
+            <div class="feature">
+              <div class="text">
+                <h4>two-Factor authentication</h4>
+                <p>enable/Disable the feature</p>
+              </div>
+              <div class="checkbox">
+                <input checked type="checkbox" class="toggle-checkbox" id="check-1">
+                <label for="check-1"></label>
+              </div>
+            </div>
+            <div class="devices">
+              <div class="text">
+                <h4>devices</h4>
+                <p>check the login devices list</p>
+              </div>
+              <a href="">Devices</a>
+            </div>
+          </div>
+          <!-- end security -->
+          <!-- start settings social info -->
+          <div class="box social-info">
+            <h2>Social Info</h2>
+            <p>social media information</p>
+            <div class="cont">
+              <input type="text" placeholder="Twitter Username">
+              <div class="icon">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+            </div>
+            <div class="cont">
+              <input type="text" placeholder="Facebook Username">
+              <div class="icon">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+            </div>
+            <div class="cont">
+              <input type="text" placeholder="Linkedin Username">
+              <div class="icon">
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+            </div>
+            <div class="cont">
+              <input type="text" placeholder="Youtube Username">
+              <div class="icon">
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+            </div>
+          </div>
+          <!-- end settings social info -->
+          <!-- start widgets -->
+          <div class="box widgets">
+            <h2>widgets control</h2>
+            <p>Show/Hide Widgets</p>
+            <ul class="disable-select">
+              <li>
+                <input type="checkbox" checked id="quick">
+                <label for="quick">Quick Draft</label>
+              </li>
+              <li>
+                <input type="checkbox" checked id="yearly">
+                <label for="yearly">yearly targets</label>
+              </li>
+              <li>
+                <input type="checkbox" checked id="tickets">
+                <label for="tickets">tickets statistics</label>
+              </li>
+              <li>
+                <input type="checkbox" checked id="latest">
+                <label for="latest">latest news</label>
+              </li>
+              <li>
+                <input type="checkbox"  id="tasks">
+                <label for="tasks">latest tasks</label>
+              </li>
+              <li>
+                <input type="checkbox" checked id="top">
+                <label for="top">top search items</label>
+              </li>
+            </ul>
+          </div>
+          <!-- end widgets -->
+          <!-- start backup manager -->
+          <div class="box backup">
+            <h2>
+              backup manager
+            </h2>
+            <p>control backup time and location</p>
+            
+              <ul class="disable-select">
+                <li>
+                  <input type="radio" name="backup" id="daily" checked>
+                  <label for="daily">daily</label>
+                </li>
+                <li>
+                  <input type="radio" name="backup" id="weekly" >
+                  <label for="weekly">weekly</label>
+                </li>
+                <li>
+                  <input type="radio" name="backup" id="monthly" >
+                  <label for="monthly">monthly</label>
+                </li>
+              </ul>
+              <div class="info disable-select">
+                <input type="radio" name="server" id="megaman">
+                <div class="server">
+                  <label for="megaman">
+                    <i class="fa-solid fa-server"></i>megaman
+                  </label>
+                </div>
+                <input type="radio" name="server" id="zero" checked>
+                <div class="server">
+                  <label for="zero">
+                    <i class="fa-solid fa-server"></i>zero
+                  </label>
+                </div>
+                <input type="radio" name="server" id="sigma">
+                <div class="server">
+                  <label for="sigma">
+                    <i class="fa-solid fa-server"></i>sigma
+                  </label>
+                </div>
+              </div>
+            
+          </div>
+          <!-- end backup manager -->
+      </div>
+      <!-- end settings -->
     </div>
   </body>
 </html>
