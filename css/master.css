@@ -942,7 +942,15 @@ a {
   gap: 20px;
   align-items: center;
 }
-
+.dashboard .box.latest-post > .profile > .img {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.dashboard .box.latest-post > .profile > .img img {
+  max-width: 100%;
+}
 .dashboard .box.latest-post .profile > .text > h4 {
   margin-bottom: 5px;
 }
